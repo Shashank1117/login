@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            table{
+                background-color: darkcyan;
+                padding: 10px 50px;
+                border: 5px solid red;
+                font-size: 30px;
+            }
+            td{
+                padding: 20px;
+            }
+            #btn1,#btn2{
+                padding: 10px 20px;
+                color: white;
+                background-color: green;
+            }
+            #btn1:hover,#btn2:hover{
+                background-color: yellow;
+                color: red;
+            }
+            input[type="password"]{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <form method="post" action="confirmation.html">
+            <h1>Please Register Here.....</h1>
+            <table>
+                <tr>
+                    <th>Firstname:</th>
+                    <td><input type="text" name="fname"></td>
+                </tr>
+
+                <tr>
+                    <th>Lastname:</th>
+                    <td><input type="text" name="lname"></td>
+                </tr>
+
+                <tr>
+                    <th>Username:</th>
+                    <td><input type="text" name="uname"></td>
+                </tr>
+
+                <tr>
+                    <th>Password:</th>
+                    <td><input type="password" name="pwd"></td>
+                </tr>
+
+                <tr>
+                    <th>Confirm Password:</th>
+                    <td><input type="password" name="pwd"></td>
+                </tr>
+
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="email" name="email"></td>
+                </tr>
+
+                <tr>
+                    <th>Mobile Number:</th>
+                    <td>
+                        <select>
+                            <option value="91">91</option>
+                            <option value="81">81</option>
+                            <option value="71">71</option>
+                            <option value="61">61</option>
+                            <option value="51">51</option>
+                        </select>
+                        <input type="number" name="no.">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="other">Other
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Preffered Location</th>
+                    <td>
+                        <input type="checkbox" name="location">Hydrabad<br>
+                        <input type="checkbox" name="location">Mumbai<br>
+                        <input type="checkbox" name="location">Banglore<br>
+                        <input type="checkbox" name="location">Pune<br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Your Description:</th>
+                    <td><textarea></textarea></td>
+                </tr>
+
+                <tr>
+                    <th></th>
+                    <td>
+                        <input type="submit" value="Register" id="btn1">
+                        <input type="clear" value="Clear" id="btn2">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th></th>
+                    <td>
+                        <p>Did U Have An Account ? <a href="login.html">Login</a></p>
+                    </td>
+                </tr>
+            </table>
+            
+        </form>
+        </center>
+    </body>
+</html>
